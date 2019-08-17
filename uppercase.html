@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> uppercase the string </title>
+	<script>
+		function upper(){
+		var a = document.getElementById("st").innerHTML;
+		document.getElementById("st").innerHTML = a.toUpperCase();
+	}
+	</script>
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Lobster|Playfair+Display|Ubuntu');
+	body{
+		background-color: cyan;
+
+	}
+		button{
+		border-radius: 0px 10px 10px 10px ;
+		font-size: 2em;
+		position: absolute;
+		bottom: 10%;
+		left: 30%;
+		background-color: yellow;
+
+	}
+	p{
+		font-size: 4em;
+		font-family: lobster;
+		margin-left: 20%;
+		color:dodgerblue;
+
+	}
+</style>
+</head>
+<body>
+		     <p id="st" > hello my name is karan</p>
+
+		     <button onclick="upper()"> click to see the change</button>
+           
+	
+
+</body>
+</html>

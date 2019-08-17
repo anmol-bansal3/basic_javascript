@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator </title>
+	<style>
+		table{
+			margin: 250px auto;
+			width: 300px;
+		}
+		button{
+			width:100px;
+			height:50px;
+		}
+		#text{
+			width:410px;
+			height: 25px;
+		}
+	</style>
+	<script>
+	var a;
+	function get1(){
+			var x=document.getElementById('1').value;
+			document.getElementById('text').value=x;
+			a=a+x;
+		}
+		function get2(){
+			var x=document.getElementById('2').value;
+			document.getElementById('text').value=x;
+			a=a+x;
+		}
+		function get3(){
+			var x=document.getElementById('3').value;
+			document.getElementById('text').value=x;
+		}
+		function get4(){
+			var x=document.getElementById('4').value;
+			document.getElementById('text').value=x;
+		}
+		function get5(){
+			var x=document.getElementById('5').value;
+			document.getElementById('text').value=x;
+		}
+		function get6(){
+			var x=document.getElementById('6').value;
+			document.getElementById('text').value=x;
+		}
+		function get7(){
+			var x=document.getElementById('7').value;
+			document.getElementById('text').value=x;
+		}
+		function get8(){
+			var x=document.getElementById('8').value;
+			document.getElementById('text').value=x;
+		}
+		function get9(){
+			var x=document.getElementById('9').value;
+			document.getElementById('text').value=x;
+		}
+		function get0(){
+			var x=document.getElementById('0').value;
+			document.getElementById('text').value=x;
+		}
+		function add(){
+			
+		}
+    </script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td colspan="4"><input id="text" type="number"></td>
+		</tr>
+		<tr>
+			<td><button value="1" id="1" onclick="get1()" >1</button></td>
+			<td><button value="2" id="2" onclick="get2()" >2</button></td>
+			<td><button value="3" id="3" onclick="get3()" >3</button></td>
+			<td><button id="10" onclick="add()" >+</button></td>
+		</tr>
+		<tr>
+			<td><button value="4" id="4" onclick="get4()" >4</button></td>
+			<td><button value="5" id="5" onclick="get5()" >5</button></td>
+			<td><button value="6" id="6" onclick="get6()" >6</button></td>
+			<td><button id="11" onclick="sub()" >-</button></td>
+		</tr>
+		<tr>
+			<td><button value="7" id="7" onclick="get7()" >7</button></td>
+			<td><button value="8" id="8" onclick="get8()" >8</button></td>
+			<td><button value="9" id="9" onclick="get9()" >9</button></td>
+			<td><button id="12" onclick="div()" >/</button></td>
+		</tr>
+		<tr>
+			<td colspan="2"><button value="0" id="0" onclick="get0()" style="width:205px;" >0</button></td>
+			<td colspan="1"><button id="14" onclick="equal()" >=</button></td>
+			<td colspan="1"><button id="13" onclick="mul()" >*</button></td>
+		</tr>
+</body>
+</html>

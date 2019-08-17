@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> reverse a string</title>
+	<script>
+		 function doreverse(c)
+         {
+         	c = c.split('');
+         	c = c.reverse();
+         	c = c.join('');
+         	document.getElementById('newstring').innerHTML = c;
+            if (c == document.getElementById('string').value) {
+                document.getElementById('newstring').innerHTML += " and its a palindrome";
+            }
+            else
+            {
+               document.getElementById('newstring').innerHTML += " and its not a palindrome"; 
+            }
+         	}
+
+        function revers()
+        {
+            var a = document.getElementById('string').value;
+            var b = a;
+            doreverse(b);
+        }
+
+
+         
+    </script>
+    <style>
+    	body{
+    		padding: 0;
+    		margin: 0;
+    		background-color: magenta;
+    	}
+  
+        div {
+            margin: 200px 100px 100px 550px;
+        	padding: 20px;
+        }
+        p{
+            font-size: 3em;
+            margin-left: -150px; 
+        }
+        button{
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+	<input id="string">
+
+	<button onclick="revers()"> click to reverse the sting</button>
+
+		<p id="newstring"></p>
+    </div>
+
+</body>
+</html>

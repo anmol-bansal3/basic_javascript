@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> reverse a number</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lobster|Playfair+Display|Ubuntu');
+	body{
+		margin: 0;
+		padding: 0;
+		background-color: cyan;
+	}
+	div{
+		position: absolute;
+		top: 200px;
+		left: 590px;
+	}
+	h2{
+		font-family: lobster;
+		font-style: oblique;
+		text-align: center;
+		font-size: 40px;
+		color: red;
+	}
+	button{
+		border-radius: 6px;
+		padding: 4px;	
+		background-color: yellow;
+	}
+	input{
+		padding: 4px;
+	}
+	#ans {
+		position: absolute;
+		bottom: 200px;
+		left: 600px;
+		font-size: 80px;
+		font-family: lobster;
+	}
+	#text {
+		position: absolute;
+		bottom: 125px;
+		left: 600px;
+		font-size: 80px;
+		font-family: lobster;
+	}
+</style>
+<script>
+	
+	function reverse(){
+		var a,b,no,temp=0;
+		no=Number(document.getElementById('num').value);
+		b=no;
+		while(no>0)
+		{
+			a=no%10;
+			no=parseInt(no/10);
+			temp=temp*10+a;
+		}
+		document.getElementById("ans").innerHTML= temp;
+		if(b==temp)
+		{
+			document.getElementById("text").innerHTML= "It's a palindrome";
+		}
+		else 
+			document.getElementById("text").innerHTML="It's not a palidrome";
+	}
+</script>
+</head>
+<body>
+	<h2> reverse of a number</h2>
+	<div>
+	<input id="num" placeholder="enter number">
+	<button onclick="reverse()">reverse the number</button>
+   </div>
+     <p id ="ans"></p>
+     <p id="text"><br><br><br></p>
+</body>
+</html>
